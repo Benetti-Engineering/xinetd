@@ -57,7 +57,7 @@ libopt: clean
 
 
 $(LIBNAME): $(OBJECTS)
-	ar r $@ $?
+	$(AR) r $@ $?
 	$(RANLIB) $@
 
 install: $(LIBNAME)

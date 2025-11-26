@@ -63,7 +63,7 @@ libopt: clean
 	$(INSTALL) $(FMODE) $(LIBNAME) $(LIBDIR)-O
 
 $(LIBNAME): $(OBJECTS)
-	ar r $@ $?
+	$(AR) r $@ $?
 	$(RANLIB) $@
 
 LINT_IGNORE=possible pointer alignment|RCSid unused

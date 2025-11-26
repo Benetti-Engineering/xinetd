@@ -58,7 +58,7 @@ libopt: clean
 	$(INSTALL) $(FMODE) $(LIBNAME) $(LIBDIR)/optimized
 
 $(LIBNAME): $(OBJECTS)
-	ar r $@ $?
+	$(AR) r $@ $?
 	$(RANLIB) $@
 
 install: $(LIBNAME)
